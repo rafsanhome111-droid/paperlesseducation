@@ -49,7 +49,6 @@
     />
     <meta name="twitter:image" content="https://paperlesseducation.com/assets/logo.webp" />
 
-    <!-- Optional: hint for sitemap/robots -->
     <link rel="sitemap" type="application/xml" href="https://paperlesseducation.com/sitemap.xml" />
 
     <!-- Performance -->
@@ -146,9 +145,11 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between py-3">
           <a href="#top" class="flex items-center gap-3" aria-label="Paperless Education Home">
-            <div class="h-10 w-10 rounded-2xl bg-brandTeal text-white grid place-items-center shadow-soft">
-              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <!-- ✅ Header logo.webp -->
+            <div class="h-10 w-10 rounded-2xl overflow-hidden shadow-soft border border-brandLine bg-white">
+              <img src="assets/logo.webp" alt="Paperless Education Logo" class="h-full w-full object-contain p-1" />
             </div>
+
             <div class="leading-tight">
               <div class="font-extrabold tracking-tight">Paperless Education</div>
               <div class="text-xs text-brandMuted">Digital Handnotes (PDF) • Google Drive Access</div>
@@ -189,14 +190,14 @@
               </div>
 
               <h1 class="mt-5 text-4xl sm:text-5xl font-extrabold leading-tight">
-                🔥 সম্পূর্ণ হ্যান্ডনোট প্যাকেজ —
-                <span class="text-brandTeal">এক প্যাকেজেই ফুল প্রস্তুতি</span>
+                🔥 বিসিএস + ব্যাংক —
+                <span class="text-brandTeal">ফুল প্যাকেজ ৩৯৯ টাকায়, যে কোন একটি বই ৯৯ টাকা</span>
               </h1>
 
               <p class="mt-4 text-base sm:text-lg text-brandMuted leading-relaxed max-w-xl">
                 যারা সাধারণত <span class="text-brandInk font-extrabold">৫,০০০–৬,০০০ টাকা</span> খরচ করে আলাদা আলাদা বই কেনেন,
                 তাদের জন্য একটাই সমাধান —
-                <span class="text-brandInk font-bold">সব বিষয় একসাথে, লাইফটাইম একসেসে!</span>
+                <span class="text-brandInk font-bold">৬০০০ টাকার বই মাত্র ৩৯৯ টাকায়</span>
               </p>
 
               <div class="mt-6 flex flex-col sm:flex-row gap-3">
@@ -290,7 +291,7 @@
         </div>
       </section>
 
-      <!-- ✅ UPDATED LIBRARY (BOOK COVER SIZE) -->
+      <!-- ✅ LIBRARY (BOOK COVER SIZE) + ✅ NEW COVER ADDED -->
       <section id="library" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
         <div>
           <h2 class="text-2xl sm:text-3xl font-extrabold">Premium Library</h2>
@@ -300,106 +301,137 @@
         </div>
 
         <div class="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Bangla -->
           <article class="bg-white rounded-3xl border border-brandLine shadow-card overflow-hidden hover:-translate-y-1 transition">
             <div class="bg-brandBg/60">
               <img src="assets/bangla.webp" alt="বাংলা ভাষা ও সাহিত্য হ্যান্ডনোট কভার"
-                   class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
+                class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
             </div>
             <div class="p-5">
               <h3 class="font-extrabold text-lg">বাংলা ভাষা ও সাহিত্য</h3>
               <p class="mt-1 text-sm text-brandMuted">BCS • Bank • Primary • NTRCA</p>
               <a class="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-3xl bg-brandTeal px-4 py-2.5 font-extrabold text-white hover:bg-brandTealDark transition"
-                 href="https://wa.me/8801537146783?text=Bangla%20handnote%20details%20chai." target="_blank" rel="noopener">
+                href="https://wa.me/8801537146783?text=Bangla%20handnote%20details%20chai." target="_blank" rel="noopener">
                 View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
+          <!-- English Language -->
           <article class="bg-white rounded-3xl border border-brandLine shadow-card overflow-hidden hover:-translate-y-1 transition">
             <div class="bg-brandBg/60">
               <img src="assets/english-language.webp" alt="English Language handnote cover"
-                   class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
+                class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
             </div>
             <div class="p-5">
               <h3 class="font-extrabold text-lg">English Language</h3>
               <p class="mt-1 text-sm text-brandMuted">Grammar + Vocabulary (PDF)</p>
               <a class="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-3xl bg-brandTeal px-4 py-2.5 font-extrabold text-white hover:bg-brandTealDark transition"
-                 href="https://wa.me/8801537146783?text=English%20Language%20handnote%20details%20chai." target="_blank" rel="noopener">
+                href="https://wa.me/8801537146783?text=English%20Language%20handnote%20details%20chai." target="_blank" rel="noopener">
                 View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
+          <!-- ✅ NEW: Bank Job English (Premium Book) -->
+          <article class="bg-white rounded-3xl border border-brandLine shadow-card overflow-hidden hover:-translate-y-1 transition">
+            <div class="bg-brandBg/60">
+              <img
+                src="assets/bank-job-english.png"
+                alt="Bank Job English Premium Book cover"
+                class="w-full aspect-[3/4] bg-white object-contain p-3"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-extrabold text-lg">Bank Job English (Premium Book)</h3>
+              <p class="mt-1 text-sm text-brandMuted">Preliminary + Written</p>
+              <a
+                class="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-3xl bg-brandTeal px-4 py-2.5 font-extrabold text-white hover:bg-brandTealDark transition"
+                href="https://wa.me/8801537146783?text=Bank%20Job%20English%20Premium%20Book%20er%20details%20chai."
+                target="_blank"
+                rel="noopener"
+              >
+                View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- English Literature -->
           <article class="bg-white rounded-3xl border border-brandLine shadow-card overflow-hidden hover:-translate-y-1 transition">
             <div class="bg-brandBg/60">
               <img src="assets/english-literature-black.webp" alt="English Literature handnote cover"
-                   class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
+                class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
             </div>
             <div class="p-5">
               <h3 class="font-extrabold text-lg">English Literature</h3>
               <p class="mt-1 text-sm text-brandMuted">Writers • Works • MCQ</p>
               <a class="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-3xl bg-brandTeal px-4 py-2.5 font-extrabold text-white hover:bg-brandTealDark transition"
-                 href="https://wa.me/8801537146783?text=English%20Literature%20handnote%20details%20chai." target="_blank" rel="noopener">
+                href="https://wa.me/8801537146783?text=English%20Literature%20handnote%20details%20chai." target="_blank" rel="noopener">
                 View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
+          <!-- Math & Mental -->
           <article class="bg-white rounded-3xl border border-brandLine shadow-card overflow-hidden hover:-translate-y-1 transition">
             <div class="bg-brandBg/60">
               <img src="assets/math-mental.webp" alt="গাণিতিক যুক্তি ও মানসিক দক্ষতা হ্যান্ডনোট কভার"
-                   class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
+                class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
             </div>
             <div class="p-5">
               <h3 class="font-extrabold text-lg">গাণিতিক যুক্তি ও মানসিক দক্ষতা</h3>
               <p class="mt-1 text-sm text-brandMuted">Shortcut • Practice • Tricks</p>
               <a class="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-3xl bg-brandTeal px-4 py-2.5 font-extrabold text-white hover:bg-brandTealDark transition"
-                 href="https://wa.me/8801537146783?text=Math%20%26%20Mental%20Ability%20details%20chai." target="_blank" rel="noopener">
+                href="https://wa.me/8801537146783?text=Math%20%26%20Mental%20Ability%20details%20chai." target="_blank" rel="noopener">
                 View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
+          <!-- ICT -->
           <article class="bg-white rounded-3xl border border-brandLine shadow-card overflow-hidden hover:-translate-y-1 transition">
             <div class="bg-brandBg/60">
               <img src="assets/ict.webp" alt="ICT handnote cover"
-                   class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
+                class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
             </div>
             <div class="p-5">
               <h3 class="font-extrabold text-lg">ICT (তথ্য ও যোগাযোগ প্রযুক্তি)</h3>
               <p class="mt-1 text-sm text-brandMuted">Concepts • MCQ • Notes</p>
               <a class="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-3xl bg-brandTeal px-4 py-2.5 font-extrabold text-white hover:bg-brandTealDark transition"
-                 href="https://wa.me/8801537146783?text=ICT%20handnote%20details%20chai." target="_blank" rel="noopener">
+                href="https://wa.me/8801537146783?text=ICT%20handnote%20details%20chai." target="_blank" rel="noopener">
                 View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
+          <!-- Science -->
           <article class="bg-white rounded-3xl border border-brandLine shadow-card overflow-hidden hover:-translate-y-1 transition">
             <div class="bg-brandBg/60">
               <img src="assets/science.webp" alt="সাধারণ বিজ্ঞান হ্যান্ডনোট কভার"
-                   class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
+                class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
             </div>
             <div class="p-5">
               <h3 class="font-extrabold text-lg">সাধারণ বিজ্ঞান</h3>
               <p class="mt-1 text-sm text-brandMuted">Physics • Chemistry • Biology</p>
               <a class="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-3xl bg-brandTeal px-4 py-2.5 font-extrabold text-white hover:bg-brandTealDark transition"
-                 href="https://wa.me/8801537146783?text=General%20Science%20handnote%20details%20chai." target="_blank" rel="noopener">
+                href="https://wa.me/8801537146783?text=General%20Science%20handnote%20details%20chai." target="_blank" rel="noopener">
                 View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
+          <!-- GK -->
           <article class="bg-white rounded-3xl border border-brandLine shadow-card overflow-hidden hover:-translate-y-1 transition sm:col-span-2 lg:col-span-1">
             <div class="bg-brandBg/60">
               <img src="assets/gk-orange.webp" alt="সাধারণ জ্ঞান handnote cover"
-                   class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
+                class="w-full aspect-[3/4] bg-white object-contain p-3" loading="lazy" />
             </div>
             <div class="p-5">
-              <h3 class="font-extrabold text-lg">সাধারণ জ্ঞান (BD + International + Geography)</h3>
-              <p class="mt-1 text-sm text-brandMuted">বাংলাদেশ + আন্তর্জাতিক + ভূগোল</p>
+              <h3 class="font-extrabold text-lg">সাধারণ জ্ঞান (BD + International + Geography + Ethics)</h3>
+              <p class="mt-1 text-sm text-brandMuted">বাংলাদেশ + আন্তর্জাতিক + ভূগোল + নৈতিকতা</p>
               <a class="mt-4 inline-flex w-full justify-center items-center gap-2 rounded-3xl bg-brandTeal px-4 py-2.5 font-extrabold text-white hover:bg-brandTealDark transition"
-                 href="https://wa.me/8801537146783?text=General%20Knowledge%20handnote%20details%20chai." target="_blank" rel="noopener">
+                href="https://wa.me/8801537146783?text=General%20Knowledge%20handnote%20details%20chai." target="_blank" rel="noopener">
                 View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
@@ -432,9 +464,10 @@
               <p class="mt-1 text-brandMuted text-sm">নতুন আপডেট যোগ হলে ফ্রি পাবেন।</p>
             </div>
 
+            <!-- ✅ icon added -->
             <div class="rounded-3xl border border-brandLine bg-brandBg p-6 shadow-soft">
               <div class="h-12 w-12 rounded-2xl bg-brandLeaf/10 grid place-items-center">
-                <i class="fa-solid fa-laptop-mobile text-brandLeaf" aria-hidden="true"></i>
+                <i class="fa-solid fa-mobile-screen-button text-brandLeaf" aria-hidden="true"></i>
               </div>
               <h3 class="mt-4 font-extrabold text-lg">Study Anywhere</h3>
               <p class="mt-1 text-brandMuted text-sm">Mobile/PC/Tab — সব জায়গায় পড়ুন।</p>
